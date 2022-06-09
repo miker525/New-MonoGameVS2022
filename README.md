@@ -1,6 +1,8 @@
 # VS 2022 New MonoGame Project
 An easy to use Powershell script to create new MonoGame Projects usable within Visual Studio 2022
 
+[![Test New MonoGame Script](https://github.com/miker525/New-MonoGameVS2022/actions/workflows/main.yml/badge.svg)](https://github.com/miker525/New-MonoGameVS2022/actions/workflows/main.yml)
+
 The purpose of this script is to quickly and easily generate new MonoGame projects for use within VS2022. 
 
 MonoGame is fully supported within VS2022 but there are no publicly available templates yet for it. This script aims to remedy that by installing project templates and generating new projects for you based on your input
