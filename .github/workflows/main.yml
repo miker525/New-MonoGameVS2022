@@ -1,0 +1,27 @@
+# This is a basic Action to test generating a test project on a clean environment
+
+name: Test New MonoGame Script
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v2
+        with:
+         dotnet-version: '3.1.x'
+
+      - name: Generate Test Project using script
+        run: .\NewMonoGame.ps1 -name "TestProject"
+
