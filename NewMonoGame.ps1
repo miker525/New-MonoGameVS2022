@@ -13,12 +13,7 @@ Param(
 [string]$path
 )
 
-### CHECK IF TEMPLATES ARE INSTALLED 
-$pkgs = dotnet new -l --tag MonoGame
-if ($pkgs.count -eq 0)
-{
-	dotnet new -i "MonoGame.Templates.CSharp"
-}
+dotnet new -i "MonoGame.Templates.CSharp"
 
 ### SET DEFAULT TO OPENGL
 $ptemp = "mgdesktopgl"
